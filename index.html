@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -36,6 +35,20 @@
             --text-dark: #2c3e50;
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             --bg-gradient: linear-gradient(135deg, #0f1a24 0%, #1a252f 100%);
+        }
+
+        .light-theme {
+            --primary: #8e44ad;
+            --primary-dark: #6c3483;
+            --secondary: #16a085;
+            --accent: #e74c3c;
+            --dark: #ffffff;
+            --light: #f8f9fa;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+            --text-dark: #2c3e50;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --bg-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
 
         * {
@@ -142,6 +155,10 @@
             top: 0;
             z-index: 1000;
             transition: var(--transition);
+        }
+
+        .light-theme header {
+            background-color: rgba(255, 255, 255, 0.9);
         }
 
         .header-container {
@@ -392,6 +409,10 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        .light-theme .category-card {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
         .category-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -437,6 +458,10 @@
             transition: var(--transition);
             position: relative;
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .light-theme .product-card {
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .product-card:hover {
@@ -538,6 +563,10 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        .light-theme .workshop-card {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
         .workshop-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -631,6 +660,10 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        .light-theme .review-card {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
         .review-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -694,6 +727,10 @@
             border-radius: 10px;
             box-shadow: var(--shadow);
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .light-theme .stat-item {
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .stat-number {
@@ -793,6 +830,10 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        .light-theme .contact-form {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
         .form-group {
             margin-bottom: 20px;
         }
@@ -815,6 +856,11 @@
             color: var(--text);
         }
 
+        .light-theme .form-control {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
         .form-control:focus {
             outline: none;
             border-color: var(--primary);
@@ -832,6 +878,10 @@
             color: var(--text);
             padding: 80px 0 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .light-theme footer {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .footer-content {
@@ -889,6 +939,10 @@
             transition: var(--transition);
         }
 
+        .light-theme .social-links a {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
         .social-links a:hover {
             background: var(--gradient);
             transform: translateY(-3px);
@@ -900,6 +954,10 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--text-light);
             font-size: 0.9rem;
+        }
+
+        .light-theme .footer-bottom {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         /* Back to top */
@@ -950,6 +1008,10 @@
             border-left: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        .light-theme .cart-sidebar {
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
         .cart-sidebar.active {
             right: 0;
         }
@@ -961,6 +1023,10 @@
             margin-bottom: 30px;
             padding-bottom: 15px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .light-theme .cart-header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .cart-title {
@@ -990,6 +1056,10 @@
             gap: 15px;
             padding: 15px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .light-theme .cart-item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .cart-item-img {
@@ -1040,6 +1110,10 @@
             color: var(--text);
         }
 
+        .light-theme .quantity-btn {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
         .quantity-btn:hover {
             background: var(--gradient);
             color: white;
@@ -1072,6 +1146,10 @@
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--text);
+        }
+
+        .light-theme .cart-total {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .cart-actions {
@@ -1182,6 +1260,11 @@
             margin-top: 30px;
             max-height: 60vh;
             overflow-y: auto;
+            display: none;
+        }
+
+        .search-results.active {
+            display: block;
         }
 
         .search-result-item {
@@ -1190,10 +1273,56 @@
             transition: var(--transition);
             cursor: pointer;
             color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .light-theme .search-result-item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .search-result-item:hover {
             background-color: rgba(142, 68, 173, 0.1);
+        }
+
+        .search-result-img {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .search-result-info {
+            flex-grow: 1;
+        }
+
+        .search-result-name {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .search-result-price {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .search-result-category {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
         }
 
         /* Page transitions */
@@ -1260,6 +1389,10 @@
             padding: 30px;
             position: relative;
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .light-theme .modal-content {
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .modal-close {
@@ -2354,6 +2487,36 @@
             }
         ];
 
+        const workshops = [
+            {
+                id: 1,
+                name: "Основы флористики для начинающих",
+                date: "15 июня, 2023",
+                duration: "3 часа",
+                seats: "10 мест",
+                price: 2500,
+                description: "Научитесь основам составления букетов, работе с инструментами и правильному уходу за цветами."
+            },
+            {
+                id: 2,
+                name: "Свадебная флористика",
+                date: "22 июня, 2023",
+                duration: "4 часа",
+                seats: "8 мест",
+                price: 3800,
+                description: "Освойте создание свадебных букетов, бутоньерок и оформление праздничного пространства."
+            },
+            {
+                id: 3,
+                name: "Искусство икебаны",
+                date: "29 июня, 2023",
+                duration: "2.5 часа",
+                seats: "12 мест",
+                price: 3200,
+                description: "Погрузитесь в японское искусство составления цветочных композиций икебана."
+            }
+        ];
+
         const reviews = [
             { id: 1, name: "Анна Петрова", date: "15 мая 2023", rating: 5, text: "Заказывала букет на юбилей родителей. Букет был просто шикарный! Родители в восторге. Цветы свежие, доставка вовремя. Обязательно буду заказывать еще!" },
             { id: 2, name: "Иван Сидоров", date: "10 мая 2023", rating: 4, text: "Букет очень понравился, но доставка немного задержалась. В целом впечатление положительное, цветы свежие и красивые." },
@@ -2366,8 +2529,9 @@
         // App state
         let cart = [];
         let currentPage = 'home';
-        let currentTheme = 'light';
+        let currentTheme = 'dark';
         let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
+        let searchTimeout = null;
 
         // DOM elements
         const pages = document.querySelectorAll('.page');
@@ -2381,6 +2545,8 @@
         const searchBtn = document.querySelector('.search-btn');
         const searchContainer = document.querySelector('.search-container');
         const searchClose = document.querySelector('.search-close');
+        const searchInput = document.querySelector('.search-input');
+        const searchResults = document.querySelector('.search-results');
         const starFilters = document.querySelectorAll('.star-filter');
         const addToCartButtons = document.querySelectorAll('.add-to-cart');
         const visitorCountElement = document.getElementById('visitorCount');
@@ -2399,6 +2565,13 @@
             localStorage.setItem('visitorCount', visitorCount);
             visitorCountElement.textContent = visitorCount;
 
+            // Load theme from localStorage
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                currentTheme = savedTheme;
+                applyTheme(currentTheme);
+            }
+
             // Set up event listeners
             setupEventListeners();
             
@@ -2407,11 +2580,6 @@
             
             // Update cart count
             updateCartCount();
-            
-            // Set dark theme as default
-            document.body.classList.add('dark-theme');
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            currentTheme = 'dark';
         }
 
         // Set up event listeners
@@ -2486,6 +2654,7 @@
             // Search
             searchBtn.addEventListener('click', openSearch);
             searchClose.addEventListener('click', closeSearch);
+            searchInput.addEventListener('input', handleSearchInput);
 
             // Review filters
             starFilters.forEach(filter => {
@@ -2526,17 +2695,25 @@
 
         // Theme toggle
         function toggleTheme() {
-            if (currentTheme === 'light') {
-                document.body.classList.add('dark-theme');
-                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-                currentTheme = 'dark';
-            } else {
-                document.body.classList.remove('dark-theme');
-                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            if (currentTheme === 'dark') {
                 currentTheme = 'light';
+            } else {
+                currentTheme = 'dark';
             }
             
+            applyTheme(currentTheme);
             localStorage.setItem('theme', currentTheme);
+        }
+
+        function applyTheme(theme) {
+            document.body.classList.remove('dark-theme', 'light-theme');
+            document.body.classList.add(theme + '-theme');
+            
+            if (theme === 'dark') {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
         }
 
         // Cart functions
@@ -2802,7 +2979,7 @@
             }
         }
 
-        // Search
+        // Search functions
         function openSearch() {
             searchContainer.classList.add('active');
             document.querySelector('.search-input').focus();
@@ -2810,6 +2987,140 @@
 
         function closeSearch() {
             searchContainer.classList.remove('active');
+            searchResults.classList.remove('active');
+            searchInput.value = '';
+        }
+
+        function handleSearchInput(e) {
+            clearTimeout(searchTimeout);
+            
+            searchTimeout = setTimeout(() => {
+                const query = e.target.value.trim().toLowerCase();
+                
+                if (query.length < 2) {
+                    searchResults.classList.remove('active');
+                    return;
+                }
+                
+                performSearch(query);
+            }, 300);
+        }
+
+        function performSearch(query) {
+            // Search products
+            const productResults = products.filter(product => 
+                product.name.toLowerCase().includes(query) || 
+                product.description.toLowerCase().includes(query)
+            );
+            
+            // Search workshops
+            const workshopResults = workshops.filter(workshop =>
+                workshop.name.toLowerCase().includes(query) ||
+                workshop.description.toLowerCase().includes(query)
+            );
+            
+            // Search categories
+            const categoryResults = [
+                { id: 'romantic', name: 'Романтические букеты', type: 'category' },
+                { id: 'holiday', name: 'Праздничные букеты', type: 'category' },
+                { id: 'custom', name: 'Букеты на заказ', type: 'category' }
+            ].filter(category => 
+                category.name.toLowerCase().includes(query)
+            );
+            
+            // Combine all results
+            const allResults = [
+                ...productResults.map(p => ({...p, type: 'product'})),
+                ...workshopResults.map(w => ({...w, type: 'workshop'})),
+                ...categoryResults
+            ];
+            
+            displaySearchResults(allResults, query);
+        }
+
+        function displaySearchResults(results, query) {
+            searchResults.innerHTML = '';
+            
+            if (results.length === 0) {
+                searchResults.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 15px; opacity: 0.5;"></i>
+                        <p>По запросу "${query}" ничего не найдено</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem;">Попробуйте изменить запрос или просмотрите все товары в <a href="#" data-page="catalog" style="color: var(--primary);">каталоге</a></p>
+                    </div>
+                `;
+                
+                // Add event listener for catalog link
+                const catalogLink = searchResults.querySelector('a[data-page="catalog"]');
+                if (catalogLink) {
+                    catalogLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        navigateToPage('catalog');
+                        closeSearch();
+                    });
+                }
+            } else {
+                results.forEach(result => {
+                    const resultElement = document.createElement('div');
+                    resultElement.className = 'search-result-item';
+                    
+                    if (result.type === 'product') {
+                        resultElement.innerHTML = `
+                            <div class="search-result-img">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <div class="search-result-info">
+                                <div class="search-result-name">${result.name}</div>
+                                <div class="search-result-price">${result.price} ₽</div>
+                                <div class="search-result-category">${getCategoryName(result.category)}</div>
+                            </div>
+                            <i class="fas fa-chevron-right" style="color: var(--text-light);"></i>
+                        `;
+                        
+                        resultElement.addEventListener('click', () => {
+                            viewProduct(result.id);
+                            closeSearch();
+                        });
+                    } else if (result.type === 'workshop') {
+                        resultElement.innerHTML = `
+                            <div class="search-result-img">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="search-result-info">
+                                <div class="search-result-name">${result.name}</div>
+                                <div class="search-result-price">${result.price} ₽</div>
+                                <div class="search-result-category">Мастер-класс</div>
+                            </div>
+                            <i class="fas fa-chevron-right" style="color: var(--text-light);"></i>
+                        `;
+                        
+                        resultElement.addEventListener('click', () => {
+                            navigateToPage('workshops');
+                            closeSearch();
+                        });
+                    } else {
+                        resultElement.innerHTML = `
+                            <div class="search-result-img">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <div class="search-result-info">
+                                <div class="search-result-name">${result.name}</div>
+                                <div class="search-result-category">Категория товаров</div>
+                            </div>
+                            <i class="fas fa-chevron-right" style="color: var(--text-light);"></i>
+                        `;
+                        
+                        resultElement.addEventListener('click', () => {
+                            viewCategory(result.id);
+                            closeSearch();
+                        });
+                    }
+                    
+                    searchResults.appendChild(resultElement);
+                });
+            }
+            
+            searchResults.classList.add('active');
         }
 
         // Reviews filtering
